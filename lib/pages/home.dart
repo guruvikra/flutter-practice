@@ -6,15 +6,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var name="Guru";
+    var name="Guru Vikram";
     return Scaffold(
       appBar: AppBar(
         title: Text("First App"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.blueGrey,
       ),
         body: Center(
           child: Container(
-                child: Text("hello $name"),
+                child: Text("hello $name",
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.blueGrey,
+                  fontWeight:FontWeight.bold
+                ),
+                
+                ),
               ),
         ),
         drawer: Drawer(),
